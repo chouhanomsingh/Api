@@ -57,7 +57,7 @@
 	<profile>
 		<id>Priority</id>
 		<build>
-			<plugin>
+			<plugins>						
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-jar-plugin</artifactId>
@@ -69,7 +69,51 @@
 					</configuration>
 					<version>3.3.0</version>
 				</plugin>
-			</plugin>
+			</plugins>
+		</build>
+		
+	</profile>
+	
+</profiles>
+<profiles>
+	<profile>
+		<id>Priority</id>
+		<build>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.3.0</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFiles>priorityFlag.xml</suiteXmlFiles>
+						</suiteXmlFiles>
+					</configuration>
+					<version>3.3.0</version>
+				</plugin>
+			</plugins>
+		</build>
+		
+	</profile>
+	
+</profiles>
+<profiles>
+	<profile>
+		<id>Priority</id>
+		<build>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.3.0</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFiles>priorityFlag.xml</suiteXmlFiles>
+						</suiteXmlFiles>
+					</configuration>
+					<version>3.3.0</version>
+				</plugin>
+			</plugins>
 		</build>
 		
 	</profile>
