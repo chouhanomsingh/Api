@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Test Runer 3(failed)">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="TestNGImplementation.CreateEventTest">
+        <methods>
+          <include name="createEventTest"/>
+          <include name="methodTeardown"/>
+          <include name="methodConfiguration"/>
+          <include name="classTeardown"/>
+          <include name="classConfiguration"/>
+        </methods>
+      </class> <!-- TestNGImplementation.CreateEventTest -->
+    </classes>
+  </test> <!-- Test Runer 3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
